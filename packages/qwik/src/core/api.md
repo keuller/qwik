@@ -4,6 +4,8 @@
 
 ```ts
 
+import type { JSXNode as JSXNode_2 } from '@builder.io/qwik';
+
 // @public
 export const $: <T>(expression: T) => QRL<T>;
 
@@ -122,6 +124,11 @@ export interface ErrorBoundaryStore {
     // (undocumented)
     error: any | undefined;
 }
+
+// Warning: (ae-forgotten-export) The symbol "ForControl" needs to be exported by the entry point index.d.ts
+//
+// @alpha
+export const For: ForControl;
 
 // @public (undocumented)
 export const Fragment: FunctionComponent<{
@@ -264,6 +271,11 @@ export interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
 
 // @internal
 export const _hW: () => void;
+
+// Warning: (ae-forgotten-export) The symbol "IfControl" needs to be exported by the entry point index.d.ts
+//
+// @alpha (undocumented)
+export const If: IfControl;
 
 // @internal (undocumented)
 export const _IMMUTABLE: unique symbol;
@@ -862,6 +874,11 @@ export interface SSRStreamProps {
 export type StreamWriter = {
     write: (chunk: string) => void;
 };
+
+// Warning: (ae-forgotten-export) The symbol "SwitchControl" needs to be exported by the entry point index.d.ts
+//
+// @alpha (undocumented)
+export const Switch: SwitchControl;
 
 // @public (undocumented)
 export interface TaskCtx {
